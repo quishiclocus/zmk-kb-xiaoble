@@ -1,0 +1,8 @@
+file_format: "1"
+id: bleboard
+name: BLEboard
+type: shield
+url: https://github.com/quishiclocus/qmk-kb-xiaoble/
+requires: [xiao_ble]
+features:
+  - keys

@@ -2,12 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: bleboard
+      url-base: http://github.com/quishiclocus
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: bleboard
+      remote: zmk-kb-xiaoble
+      revision: main
+      import: west.yml
   self:
     path: config
