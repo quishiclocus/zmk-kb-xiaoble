@@ -1,4 +1,4 @@
-/ {
+/* / {
     keymap {
         compatible = "zmk,keymap";
 
@@ -18,7 +18,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/bt.h> */
 
 
 /* The below is from https://github.com/friction07/corne-xiao/blob/main/rev2/firmware/5-col/zmk-config/boards/shields/corny/corny.keymap as an example. */
@@ -47,11 +47,6 @@
     &kp Z       &kp X       &kp C       &kp V       &kp B               &kp N   &kp M       &kp COMMA   &kp DOT     &kp FSLH
                 &lt 3 DEL   &lt 1 SPACE &kp TAB     &kp C_MUTE          &none  &kp ESC     &kp BSPC    &lt 2 RET
             >;
-
-            sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp PAGE_UP PAGE_DOWN
-            >;
         };
 
         navnum_layer {
@@ -73,11 +68,6 @@
     &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                      &kp EQUAL   &kp N4  &kp N5      &kp N6      &kp PLUS
     &trans      &trans      &kp INS     &trans      &trans                       &kp N0      &kp N1  &kp N2      &kp N3      &kp ASTERISK
                 &lt 3 DEL   &lt 1 SPACE &kp TAB     &bootloader                  &none       &kp ESC &kp BSPC    &lt 2 RET
-            >;
-
-            sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp PAGE_UP PAGE_DOWN
             >;
         };
 
@@ -101,11 +91,6 @@
     &kp DLLR        &trans      &kp LBRC    &kp RBRC    &kp AMPS                &trans          &trans          &trans              &trans      &trans
                     &lt 3 DEL   &lt 1 SPACE &kp TAB     &none                   &bootloader     &kp ESC         &kp BSPC            &lt 2 RET
             >;
-
-            sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp PAGE_UP PAGE_DOWN
-            >;
         };
 
 
@@ -128,11 +113,6 @@
     &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4        &trans      &kp F4  &kp F5      &kp F6      &kp F12
     &trans          &trans          &trans          &trans          &trans              &kp F10     &kp F1  &kp F2      &kp F3      &kp F13
                     &lt 3 DEL       &lt 1 SPACE     &kp TAB         &none               &none       &kp ESC &kp BSPC    &lt 2 RET
-            >;
-
-            sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp PAGE_UP PAGE_DOWN
             >;
         };
 
