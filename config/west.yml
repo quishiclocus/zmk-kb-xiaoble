@@ -2,16 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: bleboard
-      url-base: http://github.com/quishiclocus
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: bleboard
-      remote: zmk-kb-xiaoble
-      revision: main
-      import: west.yml
   self:
     path: config
